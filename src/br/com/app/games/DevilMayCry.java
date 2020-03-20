@@ -15,7 +15,7 @@ public class DevilMayCry extends Gaming {
     }
 
     public DevilMayCry() {
-        super("Devil May Cry");
+        super("Devil May Cry", 5);
         addHeroes(new Hero("Dante", "Filho de Esparda"));
         addHeroes(new Hero("Vergil","Filho de Esparda"));
         addHeroes(new Hero("Sparda","Demônio poderoso que venceu Mundus"));

@@ -22,13 +22,13 @@ public class Application {
         games.add(gaming);
     }
 
-    public void show(){
+    public void show() throws Exception {
         for (Gaming g: games) {
             g.show();
         }
     }
 
-    public static void main (String[] args){
+    public static void main (String[] args) throws Exception {
         System.out.println("Aplicação iniciada com sucesso.");
 
         Application application = new Application();
