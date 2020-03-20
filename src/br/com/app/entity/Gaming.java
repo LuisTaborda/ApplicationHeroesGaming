@@ -28,7 +28,7 @@ public class Gaming {
 
         List<String>heroesName = new ArrayList<>();
         for (Hero h: heroes) {
-            heroesName.add(String.format("[%s, %s]",h.getName(), h.getDescription()));
+            heroesName.add(String.format("[Nome : %s, Descrição: %s]",h.getName(), h.getDescription()));
         }
         return heroesName;
     }

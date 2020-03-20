@@ -20,7 +20,5 @@ public class DevilMayCry extends Gaming {
         addHeroes(new Hero("Vergil","Filho de Esparda"));
         addHeroes(new Hero("Sparda","Demônio poderoso que venceu Mundus"));
         addHeroes(new Hero("Eva","Humana, esposa de Sparda"));
-        System.out.println(this.getHeroes().size());
-
     }
 }

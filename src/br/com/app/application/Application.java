@@ -3,6 +3,7 @@ package br.com.app.application;
 import br.com.app.entity.Gaming;
 import br.com.app.entity.Hero;
 import br.com.app.games.DevilMayCry;
+import br.com.app.games.SuperMario;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +34,7 @@ public class Application {
         Application application = new Application();
 
         application.add(DevilMayCry.getInstance());
+        application.add(SuperMario.getInstance());
 
         application.show();
         System.out.println("Aplicação finalizada com sucesso.");
