@@ -21,5 +21,6 @@ public class Hero {
     }
     public Hero(String name, String description){
         setName(name);
-        setDescription(description);    }
+        setDescription(description);
+    }
 }

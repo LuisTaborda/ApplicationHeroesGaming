@@ -2,19 +2,39 @@ package br.com.app.application;
 
 import br.com.app.entity.Gaming;
 import br.com.app.entity.Hero;
+import br.com.app.games.DevilMayCry;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Application {
+
+    private List<Gaming> games;
+
+    public Application(){
+        if(games==null){
+            games = new ArrayList<>();
+        }
+    }
+
+    public void add(Gaming gaming){
+        games.add(gaming);
+    }
+
+    public void show(){
+        for (Gaming g: games) {
+            g.show();
+        }
+    }
+
     public static void main (String[] args){
         System.out.println("Aplicação iniciada com sucesso.");
 
-        Gaming devilMayCry = new Gaming("Devil May Cry");
-        devilMayCry.addHeroes(new Hero("Dante", "Filho de Esparda"));
-        devilMayCry.addHeroes(new Hero("Vergil","Filho de Esparda"));
-        devilMayCry.addHeroes(new Hero("Sparda","Demônio poderoso que venceu Mundus"));
-        devilMayCry.addHeroes(new Hero("Eva","Humana, esposa de Sparda"));
+        Application application = new Application();
 
-        devilMayCry.show();
+        application.add(DevilMayCry.getInstance());
 
+        application.show();
         System.out.println("Aplicação finalizada com sucesso.");
     }
 }
