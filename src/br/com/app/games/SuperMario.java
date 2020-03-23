@@ -18,7 +18,7 @@ public class SuperMario extends Gaming {
         super("Super Mario", 4);
         addHeroes(new Hero("Mario", "Encanador mais famoso do mundo dos games"));
         addHeroes(new Hero("Luigi","Mario verde"));
-        addHeroes(new Hero("Peach","Princessa mais requisitada no universo dos cogumelos"));
-        addHeroes(new Hero("Browser","A Tartaruga complexa e fissurado pela princessa"));
+        addHeroes(new Hero("Peach","Princesa mais requisitada no universo dos cogumelos"));
+        addHeroes(new Hero("Browser","A Tartaruga complexa e fissurado pela princesa"));
     }
 }
